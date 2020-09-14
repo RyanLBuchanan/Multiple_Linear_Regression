@@ -14,7 +14,7 @@ y = dataset.iloc[:, -1].values
 # Encode categories
 from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import OneHotEncoder
-ct = ColumnTransformer(transformers = [('encoder', OneHotEncoder(), [0])], remainder = 'passthrough')
+ct = ColumnTransformer(transformers = [('encoder', OneHotEncoder(), [3])], remainder = 'passthrough')
 X = np.array(ct.fit_transform(X))
 
 # Split dataset into training and test sets
