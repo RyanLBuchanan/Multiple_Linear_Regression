@@ -55,3 +55,9 @@ print("Predicted startup profit = $ regressor.predict([[1,0,0,160000, 130000, 30
 
 print(regressor.coef_)
 print("Y-intercept or start profit = $", round(regressor.intercept_, 2))
+
+# Therefore, the equation of our multiple linear regression model is:
+
+# Profit=86.6×Dummy State 1−873×Dummy State 2+786×Dummy State 3−0.773×R&D Spend+0.0329×Administration+0.0366×Marketing Spend+42467.53
+
+# Important Note: To get these coefficients we called the "coef_" and "intercept_" attributes from our regressor object. Attributes in Python are different than methods and usually return a simple value or an array of values.
