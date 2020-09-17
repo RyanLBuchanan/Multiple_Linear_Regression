@@ -6,10 +6,10 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 
-# Import the data set
+# Import the dataset
 dataset = pd.read_csv("50_Startups.csv")
-X = dataset.iloc[: , :-1].values
-y = dataset.iloc[:, -1].values
+X = dataset.iloc[: , :-1].values  # matrix of features -> predictors
+y = dataset.iloc[:, -1].values    # independent variable
 
 # Encode categories
 from sklearn.compose import ColumnTransformer
